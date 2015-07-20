@@ -11,5 +11,5 @@ import Foundation
 protocol TllSerializable {
     func initWithDictionary(dictionary:NSDictionary)->TllSerializable
     
-    func dictionaryRepresentation()->NSDictionary
+    func dictionaryRepresentation()->NSDictionary 
 }
