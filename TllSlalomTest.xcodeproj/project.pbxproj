@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323557DE1B5EC77300062878 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323557DD1B5EC77300062878 /* SwiftyJSON.framework */; };
 		323DAEBB1B595DB000B3DB86 /* TllSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DAEBA1B595DB000B3DB86 /* TllSerializable.swift */; };
 		323DAEBE1B596B7300B3DB86 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DAEBD1B596B7300B3DB86 /* SwiftyJSON.swift */; };
 		323DAEC01B596B8B00B3DB86 /* TllUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DAEBF1B596B8B00B3DB86 /* TllUser.swift */; };
 		323DAED31B59724C00B3DB86 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DAED21B59724C00B3DB86 /* RestApiManager.swift */; };
-		323DAED41B59763200B3DB86 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323DAED01B596DE400B3DB86 /* SwiftyJSON.framework */; };
-		323DAED51B59763200B3DB86 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 323DAED01B596DE400B3DB86 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		32AF945B1B55606E009B6C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF945A1B55606E009B6C5C /* AppDelegate.swift */; };
 		32AF945D1B55606E009B6C5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF945C1B55606E009B6C5C /* ViewController.swift */; };
 		32AF94601B55606E009B6C5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AF945E1B55606E009B6C5C /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				323DAED51B59763200B3DB86 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,10 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		323557DD1B5EC77300062878 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
 		323DAEBA1B595DB000B3DB86 /* TllSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TllSerializable.swift; sourceTree = "<group>"; };
 		323DAEBD1B596B7300B3DB86 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		323DAEBF1B596B8B00B3DB86 /* TllUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TllUser.swift; sourceTree = "<group>"; };
-		323DAED01B596DE400B3DB86 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftyJSON-atxvabtaeqkjrhewkckfzvhtbctp/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		323DAED21B59724C00B3DB86 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		32AF94551B55606E009B6C5C /* TllSlalomTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TllSlalomTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AF94591B55606E009B6C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323DAED41B59763200B3DB86 /* SwiftyJSON.framework in Frameworks */,
+				323557DE1B5EC77300062878 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +93,7 @@
 		32AF944C1B55606E009B6C5C = {
 			isa = PBXGroup;
 			children = (
-				323DAED01B596DE400B3DB86 /* SwiftyJSON.framework */,
+				323557DD1B5EC77300062878 /* SwiftyJSON.framework */,
 				32AF94571B55606E009B6C5C /* TllSlalomTest */,
 				32AF946D1B55606F009B6C5C /* TllSlalomTestTests */,
 				32AF94561B55606E009B6C5C /* Products */,
@@ -390,6 +388,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SwiftyJSON-atxvabtaeqkjrhewkckfzvhtbctp/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TllSlalomTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +406,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SwiftyJSON-atxvabtaeqkjrhewkckfzvhtbctp/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TllSlalomTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
